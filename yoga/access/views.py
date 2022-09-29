@@ -23,3 +23,4 @@ def login(request):
             return redirect('/home')
     else: 
         return render(request, 'login.html')
+    
