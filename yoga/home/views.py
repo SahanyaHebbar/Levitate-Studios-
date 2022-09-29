@@ -4,3 +4,6 @@ import django.contrib.staticfiles
 def home(request):
     return render(request, 'home.html')
 
+def book(request):
+    return render(request, 'book.html')
+

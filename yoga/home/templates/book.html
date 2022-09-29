@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levitate Studios|Home</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'BookPage/book.css' %}">
+	<link href="{% static 'home/styles.css' %}" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <script src="https://kit.fontawesome.com/76af01bf1c.js" crossorigin="anonymous"></script>
+    <title>Levitate Studios|Book Classes</title>
+</head>
+<body style="background-image: url('{% static 'LandingPage/PageB.png' %}'); background-size:cover;">
+    <nav>
+        <a href="/"><img src="{% static 'LandingPage/logo.png' %}" style="width:50%;"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Explore</a></li>
+                <li><a href="book">Book</a></li>
+                <li><a href="index.html">Instructor</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+                <li><a href="index.html">Login/Signup</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="tb">
+        <h1>Book Classes</h1>
+        <form action="/Event_created" method="post">
+            <table name="record">
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="First_name" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="Last_name" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="DoB" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="email" name="email_id" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td>Contact Number:</td>
+                    <td><input type="text" name="Phno" required></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Preferred Days/Time:</td>
+                    <td style="font-size: 12px;margin-bottom:0;padding-bottom: 0;">*Choose any 3 days between 6am - 9pm</td>
+    
+                </tr>
+                <tr style="margin-top: 0;padding-top: 0;">
+                    <td style="margin-top: 0;">
+                    <select name="days" multiple style="height: 150px;">
+                        
+                        <option style="margin-top: 10px;">Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                        <option>Saturday</option>
+                        <option>Sunday</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Class Type:</td>
+                    <td><select name="class_type"  >
+    
+                        <option>Batch</option>
+                        <option>Private</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Instructor:</td>
+                    <td><select name="instructor"  >
+    
+                        <option>Instructor 1</option>
+                        <option>Instructor 2</option>
+                    </select>
+                    </td>
+                </tr>
+            </table>
+            <section class="some"><input type="submit" name="" value="Submit" style="height: 40px; width: 150px;"></section>
+        </form>
+    </div>
+</body>
+<!-- JavaScript for Toggle menue in phone/tablet -->
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showMenu() {
+        navlinks.style.right = '0';
+    }
+
+    function hideMenu() {
+        navlinks.style.right = '-200px';
+    }
+</script>
+<!-- Footer -->
+<section class="footer">
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <div class="tinytext">
+        <p><i class="fa fa-copyright"></i> 2001-2002 by YoursTruly. All Rights Reserved. <br>Levitate is powered by SastaAmbani</p>
+        <p class="Mlove">Made with <i class="fa fa-heart"></i> by Ctrl Intellegence <br></p>
+        <a href="/"><img src="{%static 'LandingPage/logo.png'%}" style="width:15%"></a>
+
+    </div>
+
+</section>
+</html>
