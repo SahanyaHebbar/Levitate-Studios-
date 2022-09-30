@@ -7,3 +7,6 @@ def home(request):
 def book(request):
     return render(request, 'book.html')
 
+def aboutUs(request):
+    return render(request, 'aboutUs.html')
+
