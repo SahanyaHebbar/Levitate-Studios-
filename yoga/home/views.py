@@ -14,8 +14,6 @@ def book(request):
 def aboutUs(request):
     return render(request, 'aboutUs.html')
 
-def loginSignup(request):
-    return render(request, 'loginSignup.html')
 
 def loginSignup(request):
     global current_username
@@ -42,3 +40,6 @@ def loginSignup(request):
             return redirect('/home')
     elif request.method=='GET':
         return render(request,"loginSignup.html")
+
+def contactUs(request):
+    return render(request, 'contactUs.html')
