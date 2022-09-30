@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+    {% load static %}
+    {% block title %}Levitate Studios| Contact Us {% endblock %} 
+    {% block CSSlink %}
+	<link href="{% static 'ContactUs/contactUs.css' %}" rel="stylesheet" />
+
+    {% endblock %} 
+    
+    {% block content %}
+        <div>
+        <h1 class="heading" style="margin: 50px 0;">Contact Us</h1>
+        <div class="card">
+            <div class="section">
+                <div class="container">
+                    <div class="content-section">
+                        <div class="add">
+                            <p>Lorem ipsum dolor sit amet. <br>Lorem, ipsum dolor. <br> Bengaluru, Karnataka 560004</p>
+                        </div>
+                        <div class="dets">
+                            <span class="detsicons"><i class="fa fa-envelope"></i></span>
+                            <a class="linkstuff" href="mailto:abc@gmail.com" style="margin-left: 10px;">abc@gmail.com</a>
+                        </div>
+                        <div class="dets">
+                            <span class="phoneicons"><i class="fa fa-phone"></i></span>
+                            <a class="linkstuff" href="tel:+91 9945305749" style="margin-left: 10px;">+91 9945305749</a>
+                        </div>
+                    </div>
+                    <div class="image-section">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9927360477022!2d77.61653231378989!3d12.972316218374917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae178733bc3b23%3A0x5d4ec18559b11d62!2sVarcons%20Tech%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1664548588819!5m2!1sen!2sin"
+                            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div style="width: 50px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="card">
+            <form action="" method="post">
+                <table name="record">
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" name="First_name" placeholder="" required></td>
+
+                        <td>Last Name:</td>
+                        <td><input type="text" name="Last_name" placeholder="" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email ID:</td>
+                        <td colspan="3"><input type="email" name="email_id" placeholder="" required style="width: 800px;" ></td>
+                    </tr>
+                    <tr>
+                        <td>Message:</td>
+                        <td colspan="3">
+                        <textarea name="message" rows="5" cols="37"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <section class="some"><input type="submit" name="" value="Submit" style="height: 40px; width: 150px;padding: 0px;"></section>
+            </form>
+        </div>
+    </div>
+    {% endblock %} 

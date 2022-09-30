@@ -10,3 +10,5 @@ def book(request):
 def aboutUs(request):
     return render(request, 'aboutUs.html')
 
+def contactUs(request):
+    return render(request, 'contactUs.html')
