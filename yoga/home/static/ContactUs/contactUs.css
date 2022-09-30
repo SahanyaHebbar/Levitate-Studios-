@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+h1{
+    font-family: 'Raleway' bold;
+    font-weight: bolder;
+    text-align: center;
+}
+
+div .card {
+    background-color: rgba(255,255,255,0.5); 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    padding: 75px 50px;
+    text-align: justify;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.content-section {
+    float: left;
+    width: 55%;
+}
+
+.image-section {
+    display: inline-block;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+
+.content-section .dets a {
+    margin-top: 2px;
+    font-size: 16px;
+    padding: 2px;
+    font-family: 'Quicksand';
+    font-weight: bold;
+}
+
+.content-section .dets .linkstuff {
+    color: #777777;
+}
+
+.add p {
+    margin: 10px 0px;
+    padding: 2px 2px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.spacer {
+    height: 100px;
+}
+
+table {
+    
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 5%;
+    padding: 10px;
+    margin: auto; 
+    border: none;
+}
+
+td {
+    padding: 6px;
+    font-family: 'Quicksand';
+    color: black;
+}
+
+
+input,textarea{
+    width: 350px;
+    height: 30px;
+    background-color: #F9998C;
+    border-color:#F9998C ;
+    border-style:solid;
+    border-radius: 5px;
+    margin: 50px;
+    padding: 15px;
+}
+
+textarea{
+    width: 800px;
+    height: 200px;
+    background-color: #F9998C;
+    border-color:#F9998C ;
+    border-style:solid;
+    border-radius: 5px;
+    margin: 50px;
+    padding: 15px;
+}
+
+
+.some {
+    padding: 35px;
+    text-align: center;
+}
+
+.cusev {
+    display: block;
+}
+
+.record {
+    text-align: left;
+}
+
