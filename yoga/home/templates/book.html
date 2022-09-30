@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    {% extends "base.html" %}
+    {% load static %}
+    {% block title %}Levitate Studios|Book Classes {% endblock %} 
+    {% block CSSlink %}
+
+	<link rel="stylesheet" type="text/css" href="{% static 'BookPage/book.css' %}">
+
+    {% endblock %} 
+    
+    {% block content %}
+    <div class="tb">
+        <h1>Book Classes</h1>
+        <form action="/Event_created" method="post">
+            <table name="record">
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="First_name" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="Last_name" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="DoB" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="email" name="email_id" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td>Contact Number:</td>
+                    <td><input type="text" name="Phno" required></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Preferred Days/Time:</td>
+                    <td style="font-size: 12px;margin-bottom:0;padding-bottom: 0;">*Choose any 3 days between 6am - 9pm</td>
+    
+                </tr>
+                <tr style="margin-top: 0;padding-top: 0;">
+                    <td style="margin-top: 0;">
+                    <select name="days" multiple style="height: 150px;">
+                        
+                        <option style="margin-top: 10px;">Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                        <option>Saturday</option>
+                        <option>Sunday</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Class Type:</td>
+                    <td><select name="class_type"  >
+    
+                        <option>Batch</option>
+                        <option>Private</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Instructor:</td>
+                    <td><select name="instructor"  >
+    
+                        <option>Instructor 1</option>
+                        <option>Instructor 2</option>
+                    </select>
+                    </td>
+                </tr>
+            </table>
+            <section class="some"><input type="submit" name="" value="Submit" style="height: 40px; width: 150px;"></section>
+        </form>
+    </div>
+
+{% endblock %} 
+    
+  
