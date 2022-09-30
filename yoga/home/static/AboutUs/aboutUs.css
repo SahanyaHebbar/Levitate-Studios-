@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    /*Background Color - White*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+h1{
+    font-family: 'Raleway' bold;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+}
