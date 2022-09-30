@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    {% extends "base.html" %}
+    {% load static %}
+    {% block title %}Levitate Login/Signup  {% endblock %} 
+    {% block CSSlink %}
+    <link rel="stylesheet" type="text/css" href="{% static 'LoginSignup/loginSignup.css' %}"> 
+    {% endblock %} 
+    
+    {% block content %}
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>Login</h2>
+    
+                    <form name="Login" method="post">
+                        {% csrf_token %}
+                        <input type="text" class="input-box" placeholder="User Name" name="loginUser" required>
+                        <input type="password" class="input-box" placeholder="Password" name="loginpass" required>
+                        <button type="submit" class="button">Submit</button>
+                        <input type="checkbox"><span> Remember Me</span>
+                    </form>
+                    <button type="button" class="button" onclick="openRegister()">I'm new here</button>
+                    <a href="">Forgot Password</a>
+                </div>
+                <div class="card-back">
+                    <h2>Sign-up</h2>
+                    <form name="Signup" method="post">
+                        {% csrf_token %}
+                        <input type="text" class="input-box" placeholder="UserName" name="Username" required>
+                        <input type="text" class="input-box" placeholder="FirstName" name="first_name" required>
+                        <input type="text" class="input-box" placeholder="LastName" name="last_name" required>
+                        <input type="email" class="input-box" placeholder="Email ID" name="email" required>
+                        <input type="password" class="input-box" placeholder="Password" name="password" required>
+                        <button type="submit" class="button">Create Account</button>
+                        <input type="checkbox"><span> Remember Me</span>
+                    </form>
+                    <button type="button" class="button" onclick="openLogin()">I've an account</button>
+                    <a href="">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- JavaScript to rotate card -->
+    <script>
+        var card = document.getElementById("card");
+    
+        function openRegister() {
+            card.style.transform = "rotateY(-180deg)";
+        }
+    
+        function openLogin() {
+            card.style.transform = "rotateY(0deg)";
+        }
+    </script>
+    {% endblock %}
