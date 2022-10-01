@@ -6,7 +6,7 @@ from django.contrib import auth
 current_username = None
 current_pass =  None
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'landing.html')
 
 def book(request):
     return render(request, 'book.html')
