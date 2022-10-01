@@ -36,6 +36,7 @@
         <div class="spacer"></div>
         <div class="card">
             <form action="" method="post">
+                {% csrf_token %}
                 <table name="record">
                     <tr>
                         <td>First Name:</td>
