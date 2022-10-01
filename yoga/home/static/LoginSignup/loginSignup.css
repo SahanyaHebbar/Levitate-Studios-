@@ -33,7 +33,7 @@
      height: 100%;
      background-position: center;
      background-size: cover;
-     padding: 40px 55px;
+     padding: 15px 55px;
      box-sizing: border-box;
      backface-visibility: hidden;
  }
@@ -83,7 +83,7 @@
      display: block;
      text-align: center;
      font-size: 13px;
-     margin-top: 3px;
+     margin-top: 1px;
  }
 
  .button{
@@ -92,7 +92,7 @@
     padding: 5px 40px;
     width: 100%;
     border-radius: 30px;
-    margin: 20px auto;
+    margin: 20px auto 0 auto; 
     background-color: #F9998C;
     color: black;
     display: block;
