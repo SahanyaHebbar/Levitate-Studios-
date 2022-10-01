@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+    {% load static %}
+    {% block title %}Levitate Studios| Instructor {% endblock %} 
+    {% block CSSlink %}
+	<link href="{% static 'Instructor/instructor.css' %}" rel="stylesheet" />
+
+    {% endblock %} 
+    
+    {% block content %}
+
+    <h1 class="heading" style="margin: 50px 0;">Our Instructors</h1>
+    <div class="background" >
+        <div class="card" style="left:3%;">
+            <p style="float: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia voluptatibus earum doloremque debitis at velit accusantium laboriosam aliquid minima ex ducimus cum rerum consequuntur aperiam consectetur iure, eligendi quis?</p>
+            <div style="text-align: right;">
+                <img class="person" src="{% static 'Instructor/person3.jpg' %}" alt="" >
+            </div>
+        </div>
+    </div>
+        <div class="spacer"></div>
+    <div class="background">
+            <div class="card" style="left: 30%;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia voluptatibus earum doloremque debitis at velit accusantium laboriosam aliquid minima ex ducimus cum rerum consequuntur aperiam consectetur iure, eligendi quis?</p>
+            </div>
+    </div>
+        <div class="spacer"></div>
+    <div class="background">
+            <div class="card" style="left:3%;" >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia voluptatibus earum doloremque debitis at velit accusantium laboriosam aliquid minima ex ducimus cum rerum consequuntur aperiam consectetur iure, eligendi quis?</p>
+                
+            </div>
+    </div>
+
+
+    {% endblock %} 

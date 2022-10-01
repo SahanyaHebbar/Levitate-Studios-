@@ -43,3 +43,6 @@ def loginSignup(request):
 
 def contactUs(request):
     return render(request, 'contactUs.html')
+
+def instructor(request):
+    return render(request, 'instructor.html')
