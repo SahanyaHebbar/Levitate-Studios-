@@ -23,7 +23,7 @@ div .ccard {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 15px; 
-    width: 100px;
+    width: 1000px;
     height: 500px;
     margin: auto;
     padding: 75px 50px;
@@ -123,8 +123,11 @@ textarea{
     text-align: center;
 }
 
-.cusev {
-    display: block;
+.submit:hover{
+    background-color: #addfef;
+    transition: 1s;
+    color: black;
+    border-color: #addfef;
 }
 
 .record {
