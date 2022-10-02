@@ -1,2 +1,2 @@
-# YogaTrainingTemp
-TIE Course Project (Online Yoga Training Website Template)
+Levitate Studios - YogaTrainingTemp
+TIE Course Project (Template for Online Yoga Training Center)
