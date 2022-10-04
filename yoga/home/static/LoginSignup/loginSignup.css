@@ -104,3 +104,9 @@ button:hover {
     transition: 1s;
     color: black;
   } 
+.warning {
+    background-color:#F9998C;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+}
