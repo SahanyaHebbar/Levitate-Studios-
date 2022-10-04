@@ -15,6 +15,12 @@
                     <h2>Login</h2>
                     <form name="Login" method="post">
                         {% csrf_token %}
+                        {% if messages %}
+                        {% for message in messages %}
+                        <p {% if message.tags %} class="warning" {% endif %} >{{ message }}</p>
+                        {{ break }}
+                        {% endfor %}
+                        {% endif %}
                         <input type="text" class="input-box" placeholder="User Name" name="loginUser" required>
                         <input type="password" class="input-box" placeholder="Password" name="loginpass" required>
                         <button type="submit" class="button">Submit</button>
@@ -33,7 +39,7 @@
                         <input type="email" class="input-box" placeholder="Email ID" name="email" required>
                         <input type="password" class="input-box" placeholder="Password" name="password" required>
                         <button type="submit" class="button">Create Account</button>
-                        <input type="checkbox"><span> Remember Me</span>
+                        <input type="checkbox" name="emailUp"><span> Subscribe to email updates.</span>
                     </form>
                     <button type="button" class="button" onclick="openLogin()">I've an account</button>
                 </div>
